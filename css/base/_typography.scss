@@ -1,0 +1,36 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font: 1.6em/1.7 var(--base-font);
+	color: var(--color-text);
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+}
+
+strong {
+	font-weight: 700;
+}
+
+.content__title {
+	font-size: 2.4rem;
+	line-height: 1.15;
+	font-weight: 700;
+	margin: 0 0 30px;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 2.2rem;
+	line-height: 1.15;
+}
+
+@include breakpoint(md) {
+	h2 {
+		font-size: 2.5rem;
+	}
+}

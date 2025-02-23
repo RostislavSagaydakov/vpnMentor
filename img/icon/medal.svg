@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.341" height="38.56" viewBox="0 0 22.341 38.56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_10568" data-name="Rectangle 10568" width="22.341" height="38.56" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_48382" data-name="Group 48382" transform="translate(-703.962 -1453.725)">
+    <g id="Group_48381" data-name="Group 48381" transform="translate(703.962 1453.725)">
+      <g id="Group_48380" data-name="Group 48380" clip-path="url(#clip-path)">
+        <path id="Path_18221" data-name="Path 18221" d="M127.882,0l-7.659,14.762c-.066.128.061.265.247.265h6.2a.275.275,0,0,0,.247-.125L134.648,0Z" transform="translate(-112.307)" fill="#1577bf"/>
+        <path id="Path_18222" data-name="Path 18222" d="M98.7,212.264H89.254a.622.622,0,0,0-.622.622v5.094H99.325v-5.094a.622.622,0,0,0-.622-.622m-.719,1.468a.593.593,0,0,1-.593.593H90.566a.593.593,0,0,1-.593-.593h0a.593.593,0,0,1,.593-.593h6.825a.593.593,0,0,1,.593.593Z" transform="translate(-82.808 -198.316)" fill="#fdaf1b"/>
+        <path id="Path_18223" data-name="Path 18223" d="M14.494,14.894,6.766,0H0L7.731,14.9a.275.275,0,0,0,.247.125H14.37c.093,0,.157-.069.123-.133" fill="#1c9eff"/>
+        <path id="Path_18224" data-name="Path 18224" d="M32.59,280.824a10.4,10.4,0,1,1-10.4-10.4,10.4,10.4,0,0,1,10.4,10.4" transform="translate(-11.025 -252.659)" fill="#fdc824"/>
+        <path id="Path_18225" data-name="Path 18225" d="M54.449,305.613a7.466,7.466,0,1,1-7.466,7.466,7.474,7.474,0,0,1,7.466-7.466m0-.661a8.127,8.127,0,1,0,8.127,8.127,8.127,8.127,0,0,0-8.127-8.127" transform="translate(-43.278 -284.914)" fill="#fdaf1b"/>
+      </g>
+    </g>
+    <path id="Path_12186" data-name="Path 12186" d="M9.424,7.3l-.756-2.49a.513.513,0,0,0-.983,0L6.924,7.3H4.635a.514.514,0,0,0-.3.931L6.209,9.573l-.736,2.372a.514.514,0,0,0,.8.561l1.9-1.441,1.9,1.446a.514.514,0,0,0,.8-.561L10.14,9.578,12.012,8.24a.513.513,0,0,0-.3-.931H9.424Z" transform="translate(706.958 1473.245)" fill="#fdaf1b"/>
+  </g>
+</svg>

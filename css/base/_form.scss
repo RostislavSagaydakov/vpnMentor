@@ -1,0 +1,13 @@
+input {
+	&[type=text],
+	&[type=email],
+	&[type=password] {
+		border: var(--color-input-text-border);
+		border-radius: 6px;
+		padding: 11px 6px;
+		width: 100%;
+		box-sizing: border-box;
+		font-size: 1.6rem;
+		line-height: 1.1;
+	}
+}

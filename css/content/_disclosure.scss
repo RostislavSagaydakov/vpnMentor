@@ -1,0 +1,36 @@
+.disclosure {
+	padding: 15px 17px;
+	position: relative;
+
+	&__btn {
+		color: var(--color-details);
+		font-size: 1.4rem;
+		line-height: 1;
+
+		&::marker {
+			content: '' !important;
+			content-visibility: hidden !important;
+			display: none !important;
+			list-style: none !important;
+			opacity: 0 !important;
+			padding: 0 !important;
+			visibility: hidden !important;
+		}
+	}
+
+	&__text {
+		background-color: var(--white);
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		color: var(--color-disclosure);
+		font-size: 1.4rem;
+		line-height: normal;
+		padding: 15px;
+		width: 73%;
+		position: absolute;
+		z-index: 999;
+		right: 10px;
+		min-width: 240px;
+		text-align: left;
+		top: calc(100% - 5px);
+	}
+}

@@ -1,0 +1,46 @@
+.button {
+	text-align: center;
+	background: var(--bg-button);
+	color: var(--white);
+	font-weight: 700;
+	padding: 11px 14px;
+	vertical-align: middle;
+	border-radius: 6px;
+	display: block;
+	margin: 0 auto;
+	max-width: 90%;
+	box-sizing: border-box;
+
+	&:hover {
+		background: var(--color-button-border);
+	}
+}
+
+.back-to-top {
+	padding: 0;
+	display: none;
+	background: linear-gradient(90deg, #fdfdfd 0%, #e1e1e1 100%);
+	border-style: none;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	position: fixed;
+	right: 30px;
+	bottom: 20px;
+	cursor: pointer;
+	box-shadow: #ccc 1px 1px 3px;
+	border-radius: 4px;
+	z-index: 999;
+	color: var(--blue5);
+}
+
+@include breakpoint(md) {
+	.button {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: none;
+		font-size: 1.8rem;
+		line-height: 1.6;
+		padding: 11px 16px;
+	}
+}

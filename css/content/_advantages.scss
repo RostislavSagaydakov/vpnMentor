@@ -1,0 +1,46 @@
+.advantages {
+	margin-bottom: 16px;
+	padding-left: 10px;
+
+	li {
+		padding: 0 0 16px 25px;
+		position: relative;
+		line-height: 1.5;
+
+		&:before {
+			content: "\f118";
+			font-weight: 400;
+			font-family: "Font Awesome 6 Free";
+			color: var(--color-advantages-icon-default);
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		&.bad {
+			&:before {
+				content: "\f5b4";
+				color: var(--color-advantages-icon-bad);
+			}
+		}
+
+		&.neutral {
+			&:before {
+				content: "\f11a";
+				color: var(--color-advantages-icon-neutral);
+			}
+		}
+	}
+}
+
+@include breakpoint(md) {
+	.advantages {
+		padding: 0;
+		column-count: 2;
+		column-gap: 30px;
+
+		li {
+			page-break-inside: avoid;
+		}
+	}
+}

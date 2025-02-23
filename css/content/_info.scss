@@ -1,0 +1,27 @@
+.info {
+	background: var(--bg-info);
+	padding: 20px 15px;
+	margin-bottom: 20px;
+	border-radius: 6px;
+	line-height: 1.7;
+
+	&__title {
+		margin-bottom: 16px;
+	}
+
+	.icon {
+		font-size: 2.4rem;
+		color: var(--color-info-icon);
+		margin-inline: 4px 10px;
+	}
+
+	a {
+		font-weight: bold;
+	}
+
+	p {
+		&:last-child {
+			margin: 0;
+		}
+	}
+}

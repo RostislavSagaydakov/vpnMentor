@@ -1,0 +1,35 @@
+.featured-table {
+	font-size: 1.4rem;
+	line-height: 1.2;
+
+	&__holder {
+		border-radius: 5px;
+		overflow: auto;
+		box-shadow: var(--color-table-shadow);
+		margin-bottom: 35px;
+	}
+
+	thead {
+		td {
+			background: var(--bg--table-header);
+			color: var(--color-table-header);
+			padding: 12px;
+			border-style: none;
+		}
+	}
+
+	tbody {
+		td {
+			padding: 12px 10px;
+			border: var(--color-table-border);
+		}
+	}
+
+	a {
+		font-weight: bold;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

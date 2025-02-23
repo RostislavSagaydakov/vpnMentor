@@ -1,0 +1,12 @@
+.tip {
+	background: var(--bg-tip);
+	padding: 20px 15px;
+	line-height: 1.7;
+	border-radius: 6px;
+	font-style: italic;
+	margin-bottom: 20px;
+
+	p {
+		margin: 0;
+	}
+}
