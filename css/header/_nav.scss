@@ -245,19 +245,6 @@
 				padding: 9px 0 10px;
 				position: relative;
 				z-index: 2;
-
-				&:after {
-					content: "";
-					position: absolute;
-					bottom: -7px;
-					left: 50%;
-					transform: translateX(-50%);
-					border-left: 18px solid transparent;
-					border-right: 18px solid transparent;
-					border-bottom: 11px solid #fff;
-					opacity: 0;
-					@include transition();
-				}
 			}
 
 			&-item {
@@ -265,16 +252,31 @@
 				padding-bottom: 7px;
 				margin-bottom: -7px;
 
-				&:has(.nav__submenu) > a:before {
-					content: "\f078";
-					font-weight: 900;
-					font-family: "Font Awesome 6 Free";
-					order: 2;
-					display: flex;
-					align-items: center;
-					font-size: 1.1rem;
-					transform: rotate(0);
-					@include transition();
+				&:has(.nav__submenu) > a {
+					&:before {
+						content: "\f078";
+						font-weight: 900;
+						font-family: "Font Awesome 6 Free";
+						order: 2;
+						display: flex;
+						align-items: center;
+						font-size: 1.1rem;
+						transform: rotate(0);
+						@include transition();
+					}
+
+					&:after {
+						content: "";
+						position: absolute;
+						bottom: -7px;
+						left: 50%;
+						transform: translateX(-50%);
+						border-left: 18px solid transparent;
+						border-right: 18px solid transparent;
+						border-bottom: 11px solid #fff;
+						opacity: 0;
+						@include transition();
+					}
 				}
 
 				&:hover {

@@ -97,7 +97,7 @@ table {
   --bg-nav-desktop: var(--bg-header);
   --color-close-btn: #8999b1;
   --color-nav-link: #333;
-  --bg-nav-link-hover: var(--gray11);
+  --bg-nav-link-hover: var(--gray12);
   --color-nav-chevron: #246aa8;
   --color-nav-item-border: 1px solid var(--gray4);
   --color-nav-submenu-item-active-border: 1px solid var(--blue9);
@@ -814,18 +814,6 @@ input[type=text], input[type=email], input[type=password] {
     position: relative;
     z-index: 2;
   }
-  .nav__top-link:after {
-    content: "";
-    position: absolute;
-    bottom: -7px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: 18px solid transparent;
-    border-right: 18px solid transparent;
-    border-bottom: 11px solid #fff;
-    opacity: 0;
-    transition: all ease 250ms;
-  }
   .nav__top-item {
     position: relative;
     padding-bottom: 7px;
@@ -840,6 +828,18 @@ input[type=text], input[type=email], input[type=password] {
     align-items: center;
     font-size: 1.1rem;
     transform: rotate(0);
+    transition: all ease 250ms;
+  }
+  .nav__top-item:has(.nav__submenu) > a:after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 11px solid #fff;
+    opacity: 0;
     transition: all ease 250ms;
   }
   .nav__top-item:hover .nav__submenu {
