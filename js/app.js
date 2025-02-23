@@ -191,10 +191,10 @@ function sidebarNavigation() {
 			const navItem = document.querySelector(`.side-nav__list li[data-target="${visibleId}"]`);
 			if (navItem) {
 				navItem.classList.add('active');
-				console.log(`Active set to: ${visibleId}`);
+				// console.log(`Active set to: ${visibleId}`);
 			}
 		} else {
-			console.log('No active item set');
+			// console.log('No active item set');
 		}
 	};
 
@@ -214,7 +214,7 @@ function sidebarNavigation() {
 				const targetId = targetTitle.id;
 				const ratio = entry.intersectionRatio;
 
-				console.log(`Observer - ID: ${targetId}, Intersecting: ${entry.isIntersecting}, Ratio: ${ratio}`);
+				// console.log(`Observer - ID: ${targetId}, Intersecting: ${entry.isIntersecting}, Ratio: ${ratio}`);
 
 				if (entry.isIntersecting && ratio > maxRatio) {
 					mostVisibleId = targetId;
@@ -227,13 +227,13 @@ function sidebarNavigation() {
 			updateActiveNav(mostVisibleId);
 		} else {
 			updateActiveNav(null);
-			console.log('Observer: No visible items');
+			// console.log('Observer: No visible items');
 		}
 	}, observerOptions);
 
 	itemParents.forEach(parent => {
 		observer.observe(parent);
-		console.log(`Observing: ${parent.querySelector('.product-list__title')?.id}`);
+		// console.log(`Observing: ${parent.querySelector('.product-list__title')?.id}`);
 	});
 
 	const checkVisibilityManually = () => {
@@ -245,7 +245,7 @@ function sidebarNavigation() {
 			const targetTitle = parent.querySelector('.product-list__title');
 			if (targetTitle) {
 				const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
-				console.log(`Manual - ID: ${targetTitle.id}, Top: ${rect.top}, Bottom: ${rect.bottom}, VisibleHeight: ${visibleHeight}`);
+				// console.log(`Manual - ID: ${targetTitle.id}, Top: ${rect.top}, Bottom: ${rect.bottom}, VisibleHeight: ${visibleHeight}`);
 
 				if (visibleHeight > maxVisibleHeight && visibleHeight > 0) {
 					mostVisibleId = targetTitle.id;
@@ -258,7 +258,7 @@ function sidebarNavigation() {
 			updateActiveNav(mostVisibleId);
 		} else {
 			updateActiveNav(null);
-			console.log('Manual: No visible items');
+			// console.log('Manual: No visible items');
 		}
 	};
 
